@@ -1,0 +1,49 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="private" priority="1" />
+      <Item value="ValidationResult`0" priority="2" />
+      <Item value="url" priority="0" />
+      <Item value="String`0" priority="0" />
+      <Item value="appId" priority="1" />
+      <Item value="settingsMask" priority="0" />
+      <Item value="userId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Utils.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Enums.cs" caret="0" fromTop="0" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="532" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="256" fromTop="10" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="2015" fromTop="4" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="908" fromTop="13" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="3151" fromTop="19" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="532" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
