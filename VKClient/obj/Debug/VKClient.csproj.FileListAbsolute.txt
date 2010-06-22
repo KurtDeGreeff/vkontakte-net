@@ -6,3 +6,11 @@ c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\obj\Deb
 c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\Newtonsoft.Json.dll
 c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\Newtonsoft.Json.pdb
 c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\bin\Debug\Vkontakte.dll
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\bin\Debug\Vkontakte.pdb
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\obj\Debug\Vkontakte.dll
+C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\VKClient\obj\Debug\Vkontakte.pdb

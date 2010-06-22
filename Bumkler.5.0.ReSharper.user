@@ -23,16 +23,18 @@
   <RecentFiles>
     <RecentFiles>
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Utils.cs" caret="0" fromTop="0" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="0" fromTop="0" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Enums.cs" caret="0" fromTop="0" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="532" fromTop="12" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:IVkAdapter.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:Activity.cs" caret="954" fromTop="27" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="513" fromTop="3" />
     </RecentFiles>
     <RecentEdits>
       <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="256" fromTop="10" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="2015" fromTop="4" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="908" fromTop="13" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="3151" fromTop="19" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="532" fromTop="12" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="2025" fromTop="4" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="918" fromTop="13" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="3161" fromTop="19" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="513" fromTop="3" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
