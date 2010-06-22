@@ -1,0 +1,10 @@
+﻿
+
+namespace Vkontakte
+{
+    interface IVClient
+    {
+        
+        
+    }
+}
