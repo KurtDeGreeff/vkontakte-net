@@ -8,6 +8,7 @@ using mshtml;
 using Vkontakte;
 using Vkontakte.Activity;
 using Vkontakte.MethodResults;
+using Vkontakte.Misc;
 
 namespace Bumkler
 {
@@ -16,9 +17,9 @@ namespace Bumkler
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int userId = 1; // Replace with your ID
-        private int appId = 1; // Replace with your app id
-        private int settingsMask = 255;
+        private int userId = 59156; // Replace with your ID
+        private int appId = 1892435; // Replace with your app id
+        private int settingsMask = 4095;
 
         private Uri url;
         private SessionData sessionData;
@@ -36,6 +37,27 @@ namespace Bumkler
         {
             webBrowser.Navigated += webBrowser_Navigated;
             webBrowser.Navigate(url);
+        }
+
+        private void GetSettings()
+        {
+            if (!authenticated || adapter == null)
+            {
+                MessageBox.Show("Not authenticated!");
+                return;
+            }
+
+            var misc = new Misc(adapter);
+
+            var res = misc.GetUserSettings();
+            if (res is UserSettingsResult)
+            {
+                MessageBox.Show((res as UserSettingsResult).Settings.ToString());
+            }
+            else if (res is ErrorResult)
+            {
+                MessageBox.Show((res as ErrorResult).ErrorCode.ToString() + "\n" + (res as ErrorResult).ErrorMessage);
+            }
         }
 
         private void GetActivity()
@@ -104,12 +126,17 @@ namespace Bumkler
                 authenticated = false;
                
             }
-            webBrowser.Visibility = System.Windows.Visibility.Hidden;
+            //webBrowser.Visibility = System.Windows.Visibility.Hidden;
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             GetActivity();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            GetSettings();
         }
     }
 }

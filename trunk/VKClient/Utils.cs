@@ -21,7 +21,9 @@ namespace Vkontakte
             string sig = userId.ToString();
 
             methodParams = methodParams ?? new Dictionary<string, string>();
-
+#if(DEBUG)
+            methodParams.Add("test_mode", "1");
+#endif
             methodParams.Add("api_id", apiId.ToString());
             methodParams.Add("method", methodName);
             methodParams.Add("v", apiVersion);

@@ -82,11 +82,13 @@
     <Compile Include="Enums.cs" />
     <Compile Include="Activity\ActivityResult.cs" />
     <Compile Include="IVkAdapter.cs" />
+    <Compile Include="MethodLibraryBase.cs" />
     <Compile Include="MethodResults\ErrorResult.cs" />
     <Compile Include="MethodResults\IMethodResult.cs" />
     <Compile Include="MethodResults\MethodResultBase.cs" />
+    <Compile Include="Misc\Misc.cs" />
+    <Compile Include="Misc\UserSettingsResult.cs" />
     <Compile Include="RequestState.cs" />
-    <Compile Include="IVClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="VkAdapter.cs" />

@@ -6,22 +6,20 @@ using Vkontakte.MethodResults;
 
 namespace Vkontakte.Activity
 {
-    public class Activity
+    public class Activity:MethodLibraryBase
     {
-        private IVkAdapter Adapter;
-
-        public Activity(IVkAdapter vkAdapter)
+        public Activity(IVkAdapter adapter)
         {
-            this.Adapter = vkAdapter;
+            base.Adapter = adapter;
         }
 
         public IMethodResult Get()
         {
             try
             {
-                var methodParams = new Dictionary<string, string>() { { "test_mode", "1" }, { "uid", Adapter.UserId.ToString() } };
+                //var methodParams = new Dictionary<string, string>() { {"uid", Adapter.UserId.ToString()} };
                 var resultActivity =
-                Adapter.CallRemoteMethod("activity.get", "3.0", methodParams, (XElement methodResult) =>
+                Adapter.CallRemoteMethod("activity.get", "3.0", null, (XElement methodResult) =>
                 {
                     var result = (from item in methodResult.Elements("response")
                                   select new ActivityResult

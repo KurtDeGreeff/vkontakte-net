@@ -48,7 +48,8 @@ namespace Vkontakte
 
             try
             {
-                parseMethod(response);
+                result = parseMethod(response);
+                return result;
             }
             catch (System.NullReferenceException ex)
             {
@@ -59,7 +60,6 @@ namespace Vkontakte
                     ErrorMessage = Messages.ErrorMessages[ErrorCode.ParsingOfResultFailed]
                 };
             }
-            return null;
         }
 
         protected ErrorResult ParseErrorResult(XElement error)
