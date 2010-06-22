@@ -1,0 +1,9 @@
+﻿<Window x:Class="Bumkler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="595" Width="709">
+    <Grid>
+        <WebBrowser Height="532" HorizontalAlignment="Left" Margin="12,12,0,0" Name="webBrowser" VerticalAlignment="Top" Width="479" />
+        <Button Content="Get user status" Height="31" HorizontalAlignment="Left" Margin="503,103,0,0" Name="button1" VerticalAlignment="Top" Width="167" Click="button1_Click" />
+    </Grid>
+</Window>

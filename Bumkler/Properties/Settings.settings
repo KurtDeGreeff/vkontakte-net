@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Bumkler.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SessionId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7e92738b37a2173d7bd09ac492ffea6881c0862c1c64e339c5ed0f8f</Value>
+    </Setting>
+    <Setting Name="SecretKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3b52bf624c</Value>
+    </Setting>
+    <Setting Name="UserId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">59156</Value>
+    </Setting>
+    <Setting Name="AppId" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1885778</Value>
+    </Setting>
+    <Setting Name="SessionExpires" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1275580736</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
