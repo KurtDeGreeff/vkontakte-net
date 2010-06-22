@@ -1,0 +1,8 @@
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\obj\Debug\ResolveAssemblyReference.cache
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\obj\Debug\VKClient.pdb
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\VKClient.dll
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\VKClient.pdb
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\obj\Debug\VKClient.dll
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\Newtonsoft.Json.dll
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\Newtonsoft.Json.pdb
+c:\users\aminakov\documents\visual studio 2010\Projects\Bumkler\VKClient\bin\Debug\Newtonsoft.Json.xml
