@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Xml.Linq;
 using Vkontakte.MethodResults;
@@ -14,16 +15,39 @@ namespace Vkontakte
         public int UserId { get; set; }
         public int AppId { get; set; }
 
+        public bool Authenticated { get; set; }
+
         public VkAdapter(SessionData sessionData, int userId, int appId)
         {
-            SessionData = sessionData;
-            UserId = userId;
-            AppId = appId;
+            Authenticated = false;
+            Authenticate(sessionData, userId, appId);
+        }
+
+        public bool Authenticate(SessionData sessionData, int userId, int appId)
+        {
+            if(sessionData != null & userId > 0 & appId > 0)
+            {
+                Authenticated = true;
+                SessionData = sessionData;
+                UserId = userId;
+                AppId = appId;
+                return true;
+            }
+            else
+            {
+                Authenticated = false;
+                return false;
+            }
         }
 
         // TODO: Check session expiration time before calling the method
         public IMethodResult CallRemoteMethod(string name, string version, Dictionary<String, String> methodParams, Func<XElement, IMethodResult> resultMethod)
         {
+            if(!Authenticated)
+            {
+                throw new SecurityException("User is not authenticated. Please, call Authenticate() method first.");
+            }
+            
             string sig = Utils.MakeMethodSig(this.UserId, this.AppId, name, this.SessionData.SessionId, this.SessionData.SecretKey, methodParams);
             string url = Utils.GetRequestUrl(sig, this.SessionData.SessionId, methodParams);
             XElement root = XElement.Load(url);
