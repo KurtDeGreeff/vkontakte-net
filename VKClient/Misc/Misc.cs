@@ -19,7 +19,7 @@ namespace Vkontakte.Misc
             try
             {
                 var resultSettings =
-                Adapter.CallRemoteMethod("getUserSettings", "3.0", new Dictionary<string, string>(), (XElement methodResult) =>
+                Adapter.CallRemoteMethod("getUserSettings", "3.0", (XElement methodResult) =>
                 {
                     var result = (from item in methodResult.Elements("settings")
                                   select new UserSettingsResult()
