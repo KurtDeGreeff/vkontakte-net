@@ -41,13 +41,14 @@ namespace Vkontakte
         }
 
         // TODO: Check session expiration time before calling the method
-        public IMethodResult CallRemoteMethod(string name, string version, Dictionary<String, String> methodParams, Func<XElement, IMethodResult> resultMethod)
+        public IMethodResult CallRemoteMethod(string name, string version, Func<XElement, IMethodResult> resultMethod, Dictionary<String, String> methodParams = null)
         {
             if(!Authenticated)
             {
                 throw new SecurityException("User is not authenticated. Please, call Authenticate() method first.");
             }
-            
+            methodParams = methodParams ?? new Dictionary<string, string>();
+
             string sig = Utils.MakeMethodSig(this.UserId, this.AppId, name, this.SessionData.SessionId, this.SessionData.SecretKey, methodParams);
             string url = Utils.GetRequestUrl(sig, this.SessionData.SessionId, methodParams);
             XElement root = XElement.Load(url);

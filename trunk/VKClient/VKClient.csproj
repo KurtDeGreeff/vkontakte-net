@@ -85,7 +85,6 @@
     <Compile Include="MethodLibraryBase.cs" />
     <Compile Include="MethodResults\ErrorResult.cs" />
     <Compile Include="MethodResults\IMethodResult.cs" />
-    <Compile Include="MethodResults\MethodResultBase.cs" />
     <Compile Include="Misc\Misc.cs" />
     <Compile Include="Misc\UserSettingsResult.cs" />
     <Compile Include="RequestState.cs" />

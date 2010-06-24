@@ -35,26 +35,26 @@ namespace Vkontakte
 
             sig += secret;
             
-            var hash = getMd5Hash(sig);
+            var hash = GetMd5Hash(sig);
 
             return hash;
         }
 
-        public static string getMd5Hash(string input)
+        public static string GetMd5Hash(string input)
         {
             // Create a new instance of the MD5CryptoServiceProvider object.
-            MD5CryptoServiceProvider md5Hasher = new MD5CryptoServiceProvider();
+            var md5Hasher = new MD5CryptoServiceProvider();
 
             // Convert the input string to a byte array and compute the hash.
-            byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
+            var data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
 
             // Create a new Stringbuilder to collect the bytes
             // and create a string.
-            StringBuilder sBuilder = new StringBuilder();
+            var sBuilder = new StringBuilder();
 
             // Loop through each byte of the hashed data 
             // and format each one as a hexadecimal string.
-            for (int i = 0; i < data.Length; i++)
+            for (var i = 0; i < data.Length; i++)
             {
                 sBuilder.Append(data[i].ToString("x2"));
             }

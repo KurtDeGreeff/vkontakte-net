@@ -19,7 +19,7 @@ namespace Vkontakte.Activity
             {
                 //var methodParams = new Dictionary<string, string>() { {"uid", Adapter.UserId.ToString()} };
                 var resultActivity =
-                Adapter.CallRemoteMethod("activity.get", "3.0", null, (XElement methodResult) =>
+                Adapter.CallRemoteMethod("activity.get", "3.0", (XElement methodResult) =>
                 {
                     var result = (from item in methodResult.Elements("response")
                                   select new ActivityResult
