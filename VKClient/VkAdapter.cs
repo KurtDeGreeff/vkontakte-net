@@ -89,10 +89,29 @@ namespace Vkontakte
 
         protected ErrorResult ParseErrorResult(XElement error)
         {
-            ErrorCode errorCode = new ErrorCode();
-            Enum.TryParse(error.Element("error_code").Value, out errorCode);
+            var errorCode = new ErrorCode();
+            var errorMessage = "";
 
-            var result = new ErrorResult() { ErrorCode = errorCode, ErrorMessage = error.Element("error_msg").Value };
+            try
+            {
+                Enum.TryParse(error.Element("error_code").Value, out errorCode);
+            }
+            catch (NullReferenceException)
+            {
+                errorCode = ErrorCode.UnknownErrorOccured;
+            }
+
+            try
+            {
+                errorMessage = error.Element("error_msg").Value;
+            }
+            catch (NullReferenceException)
+            {
+                errorMessage = "Unknown error.";
+            }
+
+
+            var result = new ErrorResult() { ErrorCode = errorCode, ErrorMessage = errorMessage };
             return result;
         }
     }
