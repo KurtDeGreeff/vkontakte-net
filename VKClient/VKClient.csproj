@@ -85,10 +85,14 @@
     <Compile Include="MethodLibraryBase.cs" />
     <Compile Include="MethodResults\ErrorResult.cs" />
     <Compile Include="MethodResults\IMethodResult.cs" />
-    <Compile Include="Misc\Misc.cs" />
-    <Compile Include="Misc\UserSettingsResult.cs" />
+    <Compile Include="Users\IsAppUserResult.cs" />
+    <Compile Include="Users\UserNameCase.cs" />
+    <Compile Include="Users\Users.cs" />
+    <Compile Include="Users\User.cs" />
+    <Compile Include="Users\UserSettingsResult.cs" />
     <Compile Include="RequestState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\UserSex.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="VkAdapter.cs" />
   </ItemGroup>
