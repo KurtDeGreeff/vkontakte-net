@@ -8,33 +8,160 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="private" priority="1" />
+      <Item value="private" priority="3" />
       <Item value="ValidationResult`0" priority="2" />
       <Item value="url" priority="0" />
       <Item value="String`0" priority="0" />
-      <Item value="appId" priority="1" />
+      <Item value="appId" priority="3" />
       <Item value="settingsMask" priority="0" />
-      <Item value="userId" priority="0" />
+      <Item value="userId" priority="2" />
+      <Item value="methodParams" priority="2" />
+      <Item value="MethodLibraryBase`0" priority="4" />
+      <Item value="public" priority="24" />
+      <Item value="this" priority="0" />
+      <Item value="int" priority="1" />
+      <Item value="UserSettingsResult`0" priority="2" />
+      <Item value="Settings" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="Activity`0" priority="0" />
+      <Item value="IVkAdapter`0" priority="0" />
+      <Item value="Base64FormattingOptions`0" priority="0" />
+      <Item value="base" priority="0" />
+      <Item value="adapter" priority="1" />
+      <Item value="misc" priority="0" />
+      <Item value="GetSettings`0" priority="0" />
+      <Item value="new" priority="6" />
+      <Item value="Dictionary&lt;string,string&gt;" priority="3" />
+      <Item value="return" priority="5" />
+      <Item value="result" priority="0" />
+      <Item value="bool" priority="3" />
+      <Item value="SessionData`0" priority="0" />
+      <Item value="sessionData" priority="2" />
+      <Item value="if" priority="1" />
+      <Item value="Authenticated" priority="4" />
+      <Item value="false" priority="2" />
+      <Item value="Authenticate`0" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="throw" priority="0" />
+      <Item value="NullReferenceException`0" priority="2" />
+      <Item value="SecurityException" priority="0" />
+      <Item value="try" priority="2" />
+      <Item value="errorCode" priority="0" />
+      <Item value="UnknownErrorOccured" priority="1" />
+      <Item value="var" priority="0" />
+      <Item value="errorMessage" priority="1" />
+      <Item value="error" priority="0" />
+      <Item value="ErrorResult`0" priority="4" />
+      <Item value="ErrorCode" priority="0" />
+      <Item value="ErrorMessage" priority="0" />
+      <Item value="IMethodResult`0" priority="1" />
+      <Item value="ActivityResult`0" priority="1" />
+      <Item value="ThreadStaticAttribute`0" priority="4" />
+      <Item value="T`0" priority="10" />
+      <Item value="IMethodResult" priority="0" />
+      <Item value="as" priority="1" />
+      <Item value="short" priority="0" />
+      <Item value="IsAppUserResult`0" priority="0" />
+      <Item value="AppInstalled" priority="0" />
+      <Item value="Int16`0" priority="0" />
+      <Item value="methodResult" priority="0" />
+      <Item value="Byte`0" priority="0" />
+      <Item value="Int32`0" priority="2" />
+      <Item value="UriIdnScope`0" priority="0" />
+      <Item value="string" priority="3" />
+      <Item value="enum" priority="1" />
+      <Item value="UserSex`0" priority="3" />
+      <Item value="sex" priority="1" />
+      <Item value="UserSex" priority="0" />
+      <Item value="value" priority="0" />
+      <Item value="birthdate`0" priority="0" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="class" priority="0" />
+      <Item value="readonly" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Format`0" priority="0" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.MethodLibraryBase">
+      <Item value="Adapter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Misc.Misc">
+      <Item value="GetUserSettings`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Misc.UserSettingsResult">
+      <Item value="Settings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="First`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int16">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Linq.XElement">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Users.Users">
+      <Item value="IsAppUser`0" priority="0" />
+      <Item value="GetUserSettings`0" priority="0" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Utils.cs" caret="0" fromTop="0" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Enums.cs" caret="0" fromTop="0" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:IVkAdapter.cs" caret="0" fromTop="0" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="0" fromTop="0" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:Activity.cs" caret="954" fromTop="27" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="513" fromTop="3" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:MethodLibraryBase.cs" caret="211" fromTop="10" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="475" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:Activity.cs" caret="1188" fromTop="27" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Utils.cs" caret="2559" fromTop="59" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="2416" fromTop="12" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="941" fromTop="13" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSex.cs" caret="167" fromTop="6" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:MethodResults/f:IMethodResult.cs" caret="164" fromTop="6" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:ActivityResult.cs" caret="203" fromTop="7" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:MethodResults/f:ErrorResult.cs" caret="172" fromTop="6" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:IVkAdapter.cs" caret="217" fromTop="8" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="334" fromTop="16" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="290" fromTop="9" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="2506" fromTop="18" />
     </RecentFiles>
     <RecentEdits>
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="256" fromTop="10" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="2025" fromTop="4" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="918" fromTop="13" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="3161" fromTop="19" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="513" fromTop="3" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="365" fromTop="11" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="496" fromTop="16" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="622" fromTop="21" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="748" fromTop="26" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="880" fromTop="25" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1001" fromTop="24" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1247" fromTop="29" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1591" fromTop="18" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1856" fromTop="24" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2128" fromTop="30" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2658" fromTop="27" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2813" fromTop="24" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2956" fromTop="11" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3079" fromTop="17" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3229" fromTop="16" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3373" fromTop="21" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3535" fromTop="26" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3656" fromTop="31" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="158" fromTop="7" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="868" fromTop="12" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="857" fromTop="12" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="864" fromTop="12" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="3840" fromTop="32" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="3151" fromTop="18" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="420" fromTop="10" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="223" fromTop="8" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="448" fromTop="14" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="290" fromTop="9" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="292" fromTop="12" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="2506" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

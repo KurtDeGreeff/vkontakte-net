@@ -8,7 +8,7 @@ using mshtml;
 using Vkontakte;
 using Vkontakte.Activity;
 using Vkontakte.MethodResults;
-using Vkontakte.Misc;
+using Vkontakte.Users;
 
 namespace Bumkler
 {
@@ -47,7 +47,7 @@ namespace Bumkler
                 return;
             }
 
-            var misc = new Misc(adapter);
+            var misc = new Users(adapter);
 
             var res = misc.GetUserSettings();
             if (res is UserSettingsResult)
