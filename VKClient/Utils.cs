@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
 
 namespace Vkontakte
 {
@@ -72,29 +72,24 @@ namespace Vkontakte
 
         public static SessionData ParseLogin(Uri responseUrl)
         {
-            string json = Uri.UnescapeDataString(responseUrl.Fragment.ToString().Replace("#session=", ""));
+            string data = Uri.UnescapeDataString(responseUrl.Fragment.ToString().Replace("#session=", ""));
+
+            string pattern = "{\\\"expire\\\":\\\"([0-9]*)\\\",\\\"mid\\\":\\\"([0-9]*)\\\",\\\"secret\\\":\\\"([a-zA-Z0-9]*)\\\",\\\"sid\\\":\\\"([a-zA-Z0-9]*)\\\"}";
             
-            var session = JsonConvert.DeserializeObject<SessionData>(json);
+            var regex = new Regex(pattern);
+            var match = regex.Match(data);
+
+            SessionData session;
+            if(match.Groups.Count != 5)
+            {
+                return null;
+            }
             
-            return session;
+            return new SessionData() { SessionExpires = match.Groups[1].Value, UserId = match.Groups[2].Value, SecretKey = match.Groups[3].Value, SessionId  = match.Groups[4].Value};
         }
 
+      
        
     }
 
-    public class SessionData
-    {
-        [JsonProperty(PropertyName = "sid")]
-        public string SessionId { get; set; }
-
-        [JsonProperty(PropertyName = "secret")]
-        public string SecretKey { get; set; }
-
-        [JsonProperty(PropertyName = "mid")]
-        public string UserId { get; set; }
-
-        [JsonProperty(PropertyName = "expire")]
-        public string SessionExpires { get; set; }
-
-    }
 }

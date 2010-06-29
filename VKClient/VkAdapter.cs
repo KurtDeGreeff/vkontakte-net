@@ -78,7 +78,6 @@ namespace Vkontakte
             }
             catch (System.NullReferenceException ex)
             {
-
                 return new ErrorResult()
                 {
                     ErrorCode = ErrorCode.ParsingOfResultFailed,
