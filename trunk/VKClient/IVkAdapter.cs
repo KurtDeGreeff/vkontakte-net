@@ -7,7 +7,7 @@ namespace Vkontakte
 {
     public interface IVkAdapter
     {
-        IMethodResult CallRemoteMethod(string name, string version, Func<XElement, IMethodResult> resultMethod, Dictionary<String, String> methodParams = null);
+        T CallRemoteMethod<T>(string name, string version, Func<XElement, T> resultMethod, Dictionary<String, String> methodParams = null);
         void CallRemoteMethodAsync();
         int UserId { get; set; }
         int AppId { get; set; }

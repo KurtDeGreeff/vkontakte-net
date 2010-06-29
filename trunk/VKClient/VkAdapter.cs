@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Xml.Linq;
+using Vkontakte.Exceptions;
 using Vkontakte.MethodResults;
 
 namespace Vkontakte
@@ -41,7 +42,7 @@ namespace Vkontakte
         }
 
         // TODO: Check session expiration time before calling the method
-        public IMethodResult CallRemoteMethod(string name, string version, Func<XElement, IMethodResult> resultMethod, Dictionary<String, String> methodParams = null)
+        public T CallRemoteMethod<T>(string name, string version, Func<XElement, T> resultMethod, Dictionary<String, String> methodParams = null)
         {
             if(!Authenticated)
             {
@@ -52,7 +53,7 @@ namespace Vkontakte
             string sig = Utils.MakeMethodSig(this.UserId, this.AppId, name, this.SessionData.SessionId, this.SessionData.SecretKey, methodParams);
             string url = Utils.GetRequestUrl(sig, this.SessionData.SessionId, methodParams);
             XElement root = XElement.Load(url);
-            IMethodResult result = ParseMethodResults(root, resultMethod);
+            var result = ParseMethodResults<T>(root, resultMethod);
             return result;
         }
 
@@ -61,14 +62,14 @@ namespace Vkontakte
             throw new NotImplementedException();
         }
 
-        protected IMethodResult ParseMethodResults(XElement response, Func<XElement, IMethodResult> parseMethod)
+        protected T ParseMethodResults<T>(XElement response, Func<XElement, T> parseMethod)
         {
-            IMethodResult result;
+            T result;
 
             if (response.Name.LocalName == "error")
             {
-                result = ParseErrorResult(response);
-                return result;
+                var errorResult = ParseErrorResult(response); 
+                throw new RemoteMethodException(errorResult.ErrorCode, errorResult.ErrorMessage);
             }
 
             try
@@ -78,11 +79,7 @@ namespace Vkontakte
             }
             catch (System.NullReferenceException ex)
             {
-                return new ErrorResult()
-                {
-                    ErrorCode = ErrorCode.ParsingOfResultFailed,
-                    ErrorMessage = Messages.ErrorMessages[ErrorCode.ParsingOfResultFailed]
-                };
+                throw new RemoteMethodException(ErrorCode.ParsingOfResultFailed, Messages.ErrorMessages[ErrorCode.ParsingOfResultFailed]);
             }
         }
 
