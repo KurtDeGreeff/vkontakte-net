@@ -13,31 +13,23 @@ namespace Vkontakte.Activity
             base.Adapter = adapter;
         }
 
-        public IMethodResult Get()
+        public ActivityResult Get()
         {
-            try
+            //var methodParams = new Dictionary<string, string>() { {"uid", Adapter.UserId.ToString()} };
+            var resultActivity =
+            Adapter.CallRemoteMethod("activity.get", "3.0", methodResult =>
             {
-                //var methodParams = new Dictionary<string, string>() { {"uid", Adapter.UserId.ToString()} };
-                var resultActivity =
-                Adapter.CallRemoteMethod("activity.get", "3.0", (XElement methodResult) =>
-                {
-                    var result = (from item in methodResult.Elements("response")
-                                  select new ActivityResult
-                                  {
-                                      Activity = item.Element("activity").Value,
-                                      TimeStamp = DateTime.Parse(item.Element("time").Value),
-                                      UserId = item.Element("id").Value
-                                  }).First();
-                    return result;
-                });
+                var result = (from item in methodResult.Elements("response")
+                                select new ActivityResult
+                                {
+                                    Activity = item.Element("activity").Value,
+                                    TimeStamp = DateTime.Parse(item.Element("time").Value),
+                                    UserId = item.Element("id").Value
+                                }).First();
+                return result;
+            });
 
-                return resultActivity;
-            }
-            catch (NullReferenceException)
-            {
-                
-                throw;
-            }
+            return resultActivity;
             
         }
     }

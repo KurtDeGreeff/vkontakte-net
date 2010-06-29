@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using mshtml;
 using Vkontakte;
 using Vkontakte.Activity;
+using Vkontakte.Exceptions;
 using Vkontakte.MethodResults;
 using Vkontakte.Users;
 
@@ -20,7 +21,7 @@ namespace Bumkler
     {
         private int userId = 59156; // Replace with your ID
         private int appId = 1892435; // Replace with your app id
-        private int settingsMask = 255;
+        private int settingsMask = 2047;
 
         private Uri url;
         private SessionData sessionData;
@@ -53,16 +54,20 @@ namespace Bumkler
 
             var misc = new Users(adapter);
 
-            var res = misc.GetUserSettings();
-            if (res is UserSettingsResult)
+            try
             {
-                MessageBox.Show((res as UserSettingsResult).Settings.ToString());
+                var res = misc.GetUserSettings();
+                MessageBox.Show(res.ToString());
             }
-            else if (res is ErrorResult)
+            catch (RemoteMethodException ex)
             {
-                MessageBox.Show((res as ErrorResult).ErrorCode.ToString() + "\n" + (res as ErrorResult).ErrorMessage);
+                MessageBox.Show(String.Format("Error code:{0}\n{1}", ex.ErrorCode, ex.ErrorMessage));
             }
+            
+            
         }
+
+        
 
         private void GetActivity()
         {
@@ -74,14 +79,14 @@ namespace Bumkler
             
             var activity = new Activity(adapter);
 
-            var res = activity.Get();
-            if (res is ActivityResult)
+            try
             {
-                MessageBox.Show((res as ActivityResult).Activity);
+                var res = activity.Get();
+                MessageBox.Show(res.Activity);
             }
-            else if (res is ErrorResult)
+            catch (RemoteMethodException ex)
             {
-                MessageBox.Show((res as ErrorResult).ErrorCode.ToString() + "\n" + (res as ErrorResult).ErrorMessage);
+                MessageBox.Show(String.Format("Error code:{0}\n{1}", ex.ErrorCode, ex.ErrorMessage));
             }
         }
 
@@ -96,20 +101,13 @@ namespace Bumkler
 
             var users = new Users(adapter);
 
-            var res = users.GetFriends();
-            if (res is FriendsResult)
-            {
-                var usersList = (res as FriendsResult).FriendsList;
-                var profiles = (users.GetProfiles(usersList)as ProfilesResult);
-                listView1.ItemsSource = profiles.Users;
-            }
-            else if (res is ErrorResult)
-            {
-                MessageBox.Show((res as ErrorResult).ErrorCode.ToString() + "\n" + (res as ErrorResult).ErrorMessage);
-            }
+            var friendsList = users.GetFriends();
+            var profiles = users.GetProfiles(friendsList);
+            listView1.ItemsSource = profiles;
+            
         }
 
-        SessionData reRequestSessionData(string cookiesString)
+        SessionData ReRequestSessionData(string cookiesString)
         {
             var req = WebRequest.Create(url) as HttpWebRequest;
             var cookies = new CookieContainer();
@@ -140,7 +138,7 @@ namespace Bumkler
             if (e.Uri.ToString().Contains("http://vkontakte.ru/api/login_success.html"))
             {
                 
-                sessionData = Utils.ParseLogin(e.Uri) ?? reRequestSessionData(((sender as WebBrowser).Document as IHTMLDocument2).cookie);
+                sessionData = Utils.ParseLogin(e.Uri) ?? ReRequestSessionData(((sender as WebBrowser).Document as IHTMLDocument2).cookie);
 
                 adapter = new VkAdapter(sessionData, userId, appId);
                 authenticated = true;
