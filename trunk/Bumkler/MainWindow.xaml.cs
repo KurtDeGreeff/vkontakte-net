@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -19,12 +20,15 @@ namespace Bumkler
     {
         private int userId = 59156; // Replace with your ID
         private int appId = 1892435; // Replace with your app id
-        private int settingsMask = 4095;
+        private int settingsMask = 255;
 
         private Uri url;
         private SessionData sessionData;
         private bool authenticated = false;
         private IVkAdapter adapter;
+
+        public List<User> Friends;
+
 
         public MainWindow()
         {
@@ -81,6 +85,30 @@ namespace Bumkler
             }
         }
 
+
+        private void GetFriends()
+        {
+            if (!authenticated || adapter == null)
+            {
+                MessageBox.Show("Not authenticated!");
+                return;
+            }
+
+            var users = new Users(adapter);
+
+            var res = users.GetFriends();
+            if (res is FriendsResult)
+            {
+                var usersList = (res as FriendsResult).FriendsList;
+                var profiles = (users.GetProfiles(usersList)as ProfilesResult);
+                listView1.ItemsSource = profiles.Users;
+            }
+            else if (res is ErrorResult)
+            {
+                MessageBox.Show((res as ErrorResult).ErrorCode.ToString() + "\n" + (res as ErrorResult).ErrorMessage);
+            }
+        }
+
         SessionData reRequestSessionData(string cookiesString)
         {
             var req = WebRequest.Create(url) as HttpWebRequest;
@@ -111,7 +139,6 @@ namespace Bumkler
             
             if (e.Uri.ToString().Contains("http://vkontakte.ru/api/login_success.html"))
             {
-                MessageBox.Show("Authenticatin succeded.");
                 
                 sessionData = Utils.ParseLogin(e.Uri) ?? reRequestSessionData(((sender as WebBrowser).Document as IHTMLDocument2).cookie);
 
@@ -137,6 +164,11 @@ namespace Bumkler
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             GetSettings();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            GetFriends();
         }
     }
 }

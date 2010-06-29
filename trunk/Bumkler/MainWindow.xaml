@@ -1,10 +1,22 @@
 ﻿<Window x:Class="Bumkler.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="595" Width="709">
+        Title="MainWindow" Height="638" Width="992">
+	<Window.Resources>
+		<DataTemplate x:Key="UserItemTemplate">
+			<Grid Height="50" Width="160.333">
+				<Image x:Name="userImage" Margin="0,0,0,4.667" HorizontalAlignment="Left" Width="50" Height="50" Source="{Binding PhotoUrl}"/>
+				<TextBlock x:Name="userName" Height="18.666" Margin="66.667,0,5.333,0" TextWrapping="Wrap" Text="{Binding FirstName}" VerticalAlignment="Top" Foreground="#FF0C8CEF"/>
+                <TextBlock x:Name="userSurname" Margin="66.667,22.666,5.333,8.668" TextWrapping="Wrap" Text="{Binding LastName}" Foreground="#FF0C8CEF"/>
+			</Grid>
+		</DataTemplate>
+	</Window.Resources>
     <Grid>
         <WebBrowser Height="532" HorizontalAlignment="Left" Margin="12,12,0,0" Name="webBrowser" VerticalAlignment="Top" Width="479" />
         <Button Content="Get user status" Height="31" HorizontalAlignment="Left" Margin="503,103,0,0" Name="button1" VerticalAlignment="Top" Width="167" Click="button1_Click" />
-        <Button Content="Get settings" Height="31" HorizontalAlignment="Left" Margin="503,140,0,0" Name="button2" VerticalAlignment="Top" Width="167" Click="button2_Click" />
+        <Button Content="Get settings" Height="31" HorizontalAlignment="Left" Margin="504,141,0,0" Name="button2" VerticalAlignment="Top" Width="167" Click="button2_Click" />
+        <Button Content="Get Freinds" Height="39" HorizontalAlignment="Left" Margin="504,179,0,0" Name="button3" VerticalAlignment="Top" Width="167" Click="button3_Click" />
+        <ListView Height="567" HorizontalAlignment="Left" Margin="687,20,0,0" Name="listView1" VerticalAlignment="Top" Width="276" ItemTemplate="{DynamicResource UserItemTemplate}" ItemsSource="{Binding Friends}" VirtualizingStackPanel.IsVirtualizing="False">
+        </ListView>
     </Grid>
 </Window>

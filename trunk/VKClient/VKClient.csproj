@@ -66,9 +66,6 @@
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\..\Downloads\DotNet\Json35r7\Bin\DotNet\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -81,11 +78,15 @@
     <Compile Include="Activity\Activity.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Activity\ActivityResult.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="IVkAdapter.cs" />
     <Compile Include="MethodLibraryBase.cs" />
     <Compile Include="MethodResults\ErrorResult.cs" />
     <Compile Include="MethodResults\IMethodResult.cs" />
+    <Compile Include="SessionData.cs" />
     <Compile Include="Users\IsAppUserResult.cs" />
+    <Compile Include="Users\ProfilesResult.cs" />
+    <Compile Include="Users\FriendsResult.cs" />
     <Compile Include="Users\UserNameCase.cs" />
     <Compile Include="Users\Users.cs" />
     <Compile Include="Users\User.cs" />

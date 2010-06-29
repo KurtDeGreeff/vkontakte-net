@@ -17,9 +17,9 @@
       <Item value="userId" priority="2" />
       <Item value="methodParams" priority="2" />
       <Item value="MethodLibraryBase`0" priority="4" />
-      <Item value="public" priority="24" />
+      <Item value="public" priority="27" />
       <Item value="this" priority="0" />
-      <Item value="int" priority="1" />
+      <Item value="int" priority="3" />
       <Item value="UserSettingsResult`0" priority="2" />
       <Item value="Settings" priority="0" />
       <Item value="void" priority="0" />
@@ -30,10 +30,10 @@
       <Item value="adapter" priority="1" />
       <Item value="misc" priority="0" />
       <Item value="GetSettings`0" priority="0" />
-      <Item value="new" priority="6" />
+      <Item value="new" priority="7" />
       <Item value="Dictionary&lt;string,string&gt;" priority="3" />
-      <Item value="return" priority="5" />
-      <Item value="result" priority="0" />
+      <Item value="return" priority="6" />
+      <Item value="result" priority="2" />
       <Item value="bool" priority="3" />
       <Item value="SessionData`0" priority="0" />
       <Item value="sessionData" priority="2" />
@@ -55,7 +55,7 @@
       <Item value="ErrorResult`0" priority="4" />
       <Item value="ErrorCode" priority="0" />
       <Item value="ErrorMessage" priority="0" />
-      <Item value="IMethodResult`0" priority="1" />
+      <Item value="IMethodResult`0" priority="2" />
       <Item value="ActivityResult`0" priority="1" />
       <Item value="ThreadStaticAttribute`0" priority="4" />
       <Item value="T`0" priority="10" />
@@ -65,7 +65,7 @@
       <Item value="IsAppUserResult`0" priority="0" />
       <Item value="AppInstalled" priority="0" />
       <Item value="Int16`0" priority="0" />
-      <Item value="methodResult" priority="0" />
+      <Item value="methodResult" priority="2" />
       <Item value="Byte`0" priority="0" />
       <Item value="Int32`0" priority="2" />
       <Item value="UriIdnScope`0" priority="0" />
@@ -79,12 +79,20 @@
       <Item value="DateTime`0" priority="1" />
       <Item value="class" priority="0" />
       <Item value="readonly" priority="0" />
+      <Item value="Adapter" priority="1" />
+      <Item value="GetFriends`0" priority="0" />
+      <Item value="List" priority="1" />
+      <Item value="UserFriendsResult`0" priority="1" />
+      <Item value="FriendsList" priority="0" />
+      <Item value="List&lt;int&gt;" priority="0" />
+      <Item value="XElement`0" priority="2" />
+      <Item value="item" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Format`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int32">
-      <Item value="Parse`0" priority="0" />
+      <Item value="Parse`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Vkontakte.MethodLibraryBase">
       <Item value="Adapter" priority="0" />
@@ -100,45 +108,53 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="First`1" priority="0" />
+      <Item value="Select`2" priority="2" />
+      <Item value="Cast`1" priority="0" />
+      <Item value="ToList`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int16">
       <Item value="Parse`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Xml.Linq.XElement">
-      <Item value="Value" priority="0" />
+      <Item value="Value" priority="1" />
+      <Item value="Elements`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Vkontakte.Users.Users">
       <Item value="IsAppUser`0" priority="0" />
       <Item value="GetUserSettings`0" priority="0" />
+      <Item value="GetFriends`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.IVkAdapter">
+      <Item value="UserId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Users.UserFriendsResult">
+      <Item value="FriendsList" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Enums.cs" caret="0" fromTop="0" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:MethodLibraryBase.cs" caret="211" fromTop="10" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="475" fromTop="0" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:Activity.cs" caret="1188" fromTop="27" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Utils.cs" caret="2559" fromTop="59" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="2416" fromTop="12" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="941" fromTop="13" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSex.cs" caret="167" fromTop="6" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:MethodResults/f:IMethodResult.cs" caret="164" fromTop="6" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:ActivityResult.cs" caret="203" fromTop="7" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:MethodResults/f:ErrorResult.cs" caret="172" fromTop="6" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:IVkAdapter.cs" caret="217" fromTop="8" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="334" fromTop="16" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="0" fromTop="0" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="290" fromTop="9" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="2506" fromTop="18" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="1233" fromTop="5" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="334" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserFriendsResult.cs" caret="492" fromTop="16" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="2416" fromTop="23" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4188" fromTop="18" />
     </RecentFiles>
     <RecentEdits>
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="365" fromTop="11" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="496" fromTop="16" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="622" fromTop="21" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="748" fromTop="26" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="880" fromTop="25" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1001" fromTop="24" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1247" fromTop="29" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1591" fromTop="18" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1856" fromTop="24" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2128" fromTop="30" />
@@ -154,7 +170,6 @@
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="868" fromTop="12" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="857" fromTop="12" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="864" fromTop="12" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="3840" fromTop="32" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="3151" fromTop="18" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="420" fromTop="10" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="223" fromTop="8" />
@@ -162,6 +177,14 @@
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="290" fromTop="9" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="292" fromTop="12" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="2506" fromTop="18" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4720" fromTop="28" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4693" fromTop="32" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4587" fromTop="27" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserFriendsResult.cs" caret="274" fromTop="8" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4358" fromTop="31" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserFriendsResult.cs" caret="490" fromTop="16" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="3337" fromTop="27" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4188" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

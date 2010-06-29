@@ -23,10 +23,7 @@ C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\obj
 C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\bin\Debug\Bumkler.exe
 C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\bin\Debug\Bumkler.pdb
 C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\bin\Debug\Vkontakte.dll
-C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\bin\Debug\Newtonsoft.Json.dll
 C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\bin\Debug\Vkontakte.pdb
-C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\bin\Debug\Newtonsoft.Json.pdb
-C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\bin\Debug\Newtonsoft.Json.xml
 C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\obj\x86\Debug\MainWindow.baml
 C:\Users\aminakov\Documents\Visual Studio 2010\Projects\VkontakteSVN\Bumkler\obj\x86\Debug\MainWindow.g.cs
