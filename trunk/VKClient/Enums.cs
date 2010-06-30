@@ -1,19 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Vkontakte
+﻿namespace Vkontakte
 {
-    public enum ErrorCode { UnknownErrorOccured, ApplicationIsDisabled, IncorrectSignature, UserAuthorizationFailed, 
-        TooManyRequestsPerSecond, PermissionDeniedByUser, InvalidOrMissingParameterSpecified = 100, ParsingOfResultFailed = 789   };
-
-    public static class Messages
-    {
-        public static Dictionary<ErrorCode, string> ErrorMessages = new Dictionary<ErrorCode, string>()
-                                                                        {{ErrorCode.ParsingOfResultFailed, "Parsing of method results failed"}};
-    }
-
-    
-
+    public enum ErrorCode { UnknownErrorOccured = 1, ApplicationIsDisabled = 2, IncorrectSignature = 4, UserAuthorizationFailed = 5, 
+        TooManyRequestsPerSecond = 6, PermissionDeniedByUser = 7, InvalidOrMissingParameterSpecified = 100, ParsingOfResultFailed = 789, InvalidUserIds = 113, 	PermissionDeniedVotesProcessingDisabled = 500};
 }

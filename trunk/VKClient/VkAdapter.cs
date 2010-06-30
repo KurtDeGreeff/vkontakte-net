@@ -4,26 +4,48 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Xml.Linq;
+using Vkontakte.Constants;
 using Vkontakte.Exceptions;
 using Vkontakte.MethodResults;
 
 namespace Vkontakte
 {
+    /// <summary>
+    /// Главный адаптер для вызова методов вконтакте.апи.
+    /// Класс является синглтоном.
+    /// </summary>
     public class VkAdapter:IVkAdapter
     {
         private SessionData SessionData;
 
+        private static VkAdapter instance;
+
         public int UserId { get; set; }
+        
         public int AppId { get; set; }
 
         public bool Authenticated { get; set; }
 
-        public VkAdapter(SessionData sessionData, int userId, int appId)
+        public static VkAdapter Instance
+        {
+            get
+            {
+                return instance ?? (instance = new VkAdapter());
+            }
+        }
+        
+        private VkAdapter()
         {
             Authenticated = false;
-            Authenticate(sessionData, userId, appId);
         }
 
+        /// <summary>
+        /// Методо должен быть вызван перед вызовом любого другого метода API.
+        /// </summary>
+        /// <param name="sessionData"></param>
+        /// <param name="userId"></param>
+        /// <param name="appId"></param>
+        /// <returns></returns>
         public bool Authenticate(SessionData sessionData, int userId, int appId)
         {
             if(sessionData != null & userId > 0 & appId > 0)
@@ -41,13 +63,19 @@ namespace Vkontakte
             }
         }
 
-        // TODO: Check session expiration time before calling the method
+        
         public T CallRemoteMethod<T>(string name, string version, Func<XElement, T> resultMethod, Dictionary<String, String> methodParams = null)
         {
             if(!Authenticated)
             {
                 throw new SecurityException("User is not authenticated. Please, call Authenticate() method first.");
             }
+
+            if(DateTime.Now > SessionData.SessionExpires)
+            {
+                throw new SessionExpiredException();
+            }
+
             methodParams = methodParams ?? new Dictionary<string, string>();
 
             string sig = Utils.MakeMethodSig(this.UserId, this.AppId, name, this.SessionData.SessionId, this.SessionData.SecretKey, methodParams);
@@ -77,7 +105,7 @@ namespace Vkontakte
                 result = parseMethod(response);
                 return result;
             }
-            catch (System.NullReferenceException ex)
+            catch (NullReferenceException)
             {
                 throw new RemoteMethodException(ErrorCode.ParsingOfResultFailed, Messages.ErrorMessages[ErrorCode.ParsingOfResultFailed]);
             }
@@ -90,7 +118,7 @@ namespace Vkontakte
 
             try
             {
-                Enum.TryParse(error.Element("error_code").Value, out errorCode);
+                Enum.TryParse(error.TryGetElementValue("error_code"), out errorCode);
             }
             catch (NullReferenceException)
             {
@@ -99,7 +127,7 @@ namespace Vkontakte
 
             try
             {
-                errorMessage = error.Element("error_msg").Value;
+                errorMessage = error.TryGetElementValue("error_msg");
             }
             catch (NullReferenceException)
             {

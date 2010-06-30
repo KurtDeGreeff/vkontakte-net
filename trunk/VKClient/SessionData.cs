@@ -1,14 +1,17 @@
-﻿namespace Vkontakte
+﻿using System;
+
+namespace Vkontakte
 {
+    [Serializable]
     public class SessionData
     {
         public string SessionId { get; set; }
 
         public string SecretKey { get; set; }
 
-        public string UserId { get; set; }
+        public int UserId { get; set; }
 
-        public string SessionExpires { get; set; }
+        public DateTime SessionExpires { get; set; }
 
     }
 }
