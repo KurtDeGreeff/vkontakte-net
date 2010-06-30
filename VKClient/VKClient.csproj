@@ -76,15 +76,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity\Activity.cs" />
+    <Compile Include="Constants\GroupFields.cs" />
+    <Compile Include="Constants\Messages.cs" />
+    <Compile Include="Constants\MethodNames.cs" />
+    <Compile Include="Constants\ProfileFields.cs" />
+    <Compile Include="Date\BirthDate.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Activity\ActivityResult.cs" />
     <Compile Include="Exceptions\RemoteMethodException.cs" />
+    <Compile Include="Exceptions\SessionExpiredException.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="IVkAdapter.cs" />
     <Compile Include="MethodLibraryBase.cs" />
     <Compile Include="MethodResults\ErrorResult.cs" />
     <Compile Include="MethodResults\IMethodResult.cs" />
     <Compile Include="SessionData.cs" />
+    <Compile Include="Users\Group.cs" />
     <Compile Include="Users\UserNameCase.cs" />
     <Compile Include="Users\Users.cs" />
     <Compile Include="Users\User.cs" />

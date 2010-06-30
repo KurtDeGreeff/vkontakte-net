@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Linq;
-using Vkontakte.MethodResults;
+using Vkontakte.Constants;
 
 namespace Vkontakte.Activity
 {
-    public class Activity:MethodLibraryBase
+    public static class Activity
     {
-        public Activity(IVkAdapter adapter)
+        private static IVkAdapter Adapter;
+        
+        static Activity()
         {
-            base.Adapter = adapter;
+            Adapter = VkAdapter.Instance;
         }
 
-        public ActivityResult Get()
+        public static ActivityResult Get()
         {
             //var methodParams = new Dictionary<string, string>() { {"uid", Adapter.UserId.ToString()} };
             var resultActivity =
-            Adapter.CallRemoteMethod("activity.get", "3.0", methodResult =>
+            Adapter.CallRemoteMethod(MethodNames.ActivityGet, "3.0", methodResult =>
             {
                 var result = (from item in methodResult.Elements("response")
                                 select new ActivityResult
@@ -32,5 +32,7 @@ namespace Vkontakte.Activity
             return resultActivity;
             
         }
+
+        //TODO: Заимплементить остальные методы по работе со статусами
     }
 }

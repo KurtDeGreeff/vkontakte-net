@@ -72,20 +72,49 @@ namespace Vkontakte
 
         public static SessionData ParseLogin(Uri responseUrl)
         {
-            string data = Uri.UnescapeDataString(responseUrl.Fragment.ToString().Replace("#session=", ""));
+            string data = Uri.UnescapeDataString(responseUrl.Fragment.ToString().Replace("#session=", "").Replace("\\",""));
 
-            string pattern = "{\\\"expire\\\":\\\"([0-9]*)\\\",\\\"mid\\\":\\\"([0-9]*)\\\",\\\"secret\\\":\\\"([a-zA-Z0-9]*)\\\",\\\"sid\\\":\\\"([a-zA-Z0-9]*)\\\"}";
+            string pattern = "(\"(?<key>[a-z]+)\":\"*?(?<val>[a-zA-Z0-9]+)\"*?)";
             
             var regex = new Regex(pattern);
-            var match = regex.Match(data);
+            var matches = regex.Matches(data);
 
-            SessionData session;
-            if(match.Groups.Count != 5)
+            SessionData session = new SessionData();
+            if(matches.Count < 4)
             {
                 return null;
             }
+            else
+            {
+                foreach (Match match in matches)
+                {
+                    var value = match.Groups["val"].Value;
+                    
+                    switch(match.Groups["key"].Value)
+                    {
+                        case "expire":
+                                var d = new DateTime(1970,1,1,0,0,0);
+                                session.SessionExpires = d.AddSeconds(Int32.Parse(value));
+                            break;
+
+                        case "sid":
+                            session.SessionId = value;
+                            break;
+
+                        case "secret":
+                            session.SecretKey = value;
+                            break;
+
+                        case "mid":
+                            session.UserId = Int32.Parse(value);
+                            break;
+                    }
+                }
+
+            }
+
             
-            return new SessionData() { SessionExpires = match.Groups[1].Value, UserId = match.Groups[2].Value, SecretKey = match.Groups[3].Value, SessionId  = match.Groups[4].Value};
+            return session;
         }
 
       

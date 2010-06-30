@@ -11,5 +11,7 @@ namespace Vkontakte
         void CallRemoteMethodAsync();
         int UserId { get; set; }
         int AppId { get; set; }
+        bool Authenticated { get; set; }
+        bool Authenticate(SessionData sessionData, int userId, int appId);
     }
 }
