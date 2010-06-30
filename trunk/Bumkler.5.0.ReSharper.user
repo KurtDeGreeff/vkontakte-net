@@ -3,96 +3,226 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="private" priority="3" />
+      <Item value="private" priority="11" />
       <Item value="ValidationResult`0" priority="2" />
       <Item value="url" priority="0" />
-      <Item value="String`0" priority="0" />
-      <Item value="appId" priority="3" />
+      <Item value="String`0" priority="3" />
+      <Item value="appId" priority="4" />
       <Item value="settingsMask" priority="0" />
-      <Item value="userId" priority="2" />
-      <Item value="methodParams" priority="2" />
+      <Item value="userId" priority="3" />
+      <Item value="methodParams" priority="8" />
       <Item value="MethodLibraryBase`0" priority="4" />
-      <Item value="public" priority="27" />
-      <Item value="this" priority="0" />
-      <Item value="int" priority="3" />
-      <Item value="UserSettingsResult`0" priority="2" />
+      <Item value="public" priority="59" />
+      <Item value="this" priority="3" />
+      <Item value="int" priority="15" />
+      <Item value="UserSettingsResult`0" priority="3" />
       <Item value="Settings" priority="0" />
-      <Item value="void" priority="0" />
+      <Item value="void" priority="1" />
       <Item value="Activity`0" priority="0" />
-      <Item value="IVkAdapter`0" priority="0" />
+      <Item value="IVkAdapter`0" priority="1" />
       <Item value="Base64FormattingOptions`0" priority="0" />
       <Item value="base" priority="0" />
-      <Item value="adapter" priority="1" />
+      <Item value="adapter" priority="3" />
       <Item value="misc" priority="0" />
       <Item value="GetSettings`0" priority="0" />
-      <Item value="new" priority="7" />
-      <Item value="Dictionary&lt;string,string&gt;" priority="3" />
-      <Item value="return" priority="6" />
-      <Item value="result" priority="2" />
-      <Item value="bool" priority="3" />
-      <Item value="SessionData`0" priority="0" />
-      <Item value="sessionData" priority="2" />
-      <Item value="if" priority="1" />
+      <Item value="new" priority="33" />
+      <Item value="Dictionary&lt;string,string&gt;" priority="4" />
+      <Item value="return" priority="20" />
+      <Item value="result" priority="6" />
+      <Item value="bool" priority="5" />
+      <Item value="SessionData`0" priority="1" />
+      <Item value="sessionData" priority="4" />
+      <Item value="if" priority="12" />
       <Item value="Authenticated" priority="4" />
-      <Item value="false" priority="2" />
+      <Item value="false" priority="6" />
       <Item value="Authenticate`0" priority="0" />
-      <Item value="else" priority="0" />
+      <Item value="else" priority="1" />
       <Item value="true" priority="0" />
-      <Item value="throw" priority="0" />
-      <Item value="NullReferenceException`0" priority="2" />
+      <Item value="throw" priority="4" />
+      <Item value="NullReferenceException`0" priority="5" />
       <Item value="SecurityException" priority="0" />
-      <Item value="try" priority="2" />
-      <Item value="errorCode" priority="0" />
+      <Item value="try" priority="4" />
+      <Item value="errorCode" priority="1" />
       <Item value="UnknownErrorOccured" priority="1" />
-      <Item value="var" priority="0" />
-      <Item value="errorMessage" priority="1" />
+      <Item value="var" priority="37" />
+      <Item value="errorMessage" priority="2" />
       <Item value="error" priority="0" />
-      <Item value="ErrorResult`0" priority="4" />
-      <Item value="ErrorCode" priority="0" />
-      <Item value="ErrorMessage" priority="0" />
-      <Item value="IMethodResult`0" priority="2" />
-      <Item value="ActivityResult`0" priority="1" />
-      <Item value="ThreadStaticAttribute`0" priority="4" />
-      <Item value="T`0" priority="10" />
+      <Item value="ErrorResult`0" priority="6" />
+      <Item value="ErrorCode" priority="1" />
+      <Item value="ErrorMessage" priority="1" />
+      <Item value="IMethodResult`0" priority="3" />
+      <Item value="ActivityResult`0" priority="2" />
+      <Item value="ThreadStaticAttribute`0" priority="5" />
+      <Item value="T`0" priority="11" />
       <Item value="IMethodResult" priority="0" />
-      <Item value="as" priority="1" />
+      <Item value="as" priority="6" />
       <Item value="short" priority="0" />
       <Item value="IsAppUserResult`0" priority="0" />
       <Item value="AppInstalled" priority="0" />
       <Item value="Int16`0" priority="0" />
-      <Item value="methodResult" priority="2" />
-      <Item value="Byte`0" priority="0" />
-      <Item value="Int32`0" priority="2" />
+      <Item value="methodResult" priority="5" />
+      <Item value="Byte`0" priority="1" />
+      <Item value="Int32`0" priority="8" />
       <Item value="UriIdnScope`0" priority="0" />
-      <Item value="string" priority="3" />
+      <Item value="string" priority="18" />
       <Item value="enum" priority="1" />
-      <Item value="UserSex`0" priority="3" />
-      <Item value="sex" priority="1" />
+      <Item value="UserSex`0" priority="10" />
+      <Item value="sex" priority="3" />
       <Item value="UserSex" priority="0" />
-      <Item value="value" priority="0" />
+      <Item value="value" priority="6" />
       <Item value="birthdate`0" priority="0" />
-      <Item value="DateTime`0" priority="1" />
-      <Item value="class" priority="0" />
-      <Item value="readonly" priority="0" />
-      <Item value="Adapter" priority="1" />
-      <Item value="GetFriends`0" priority="0" />
-      <Item value="List" priority="1" />
-      <Item value="UserFriendsResult`0" priority="1" />
-      <Item value="FriendsList" priority="0" />
-      <Item value="List&lt;int&gt;" priority="0" />
-      <Item value="XElement`0" priority="2" />
-      <Item value="item" priority="1" />
+      <Item value="DateTime`0" priority="8" />
+      <Item value="class" priority="1" />
+      <Item value="readonly" priority="4" />
+      <Item value="Adapter" priority="3" />
+      <Item value="GetFriends`0" priority="1" />
+      <Item value="List" priority="11" />
+      <Item value="UserFriendsResult`0" priority="2" />
+      <Item value="FriendsList" priority="2" />
+      <Item value="List&lt;int&gt;" priority="2" />
+      <Item value="XElement`0" priority="4" />
+      <Item value="item" priority="15" />
+      <Item value="from" priority="0" />
+      <Item value="in" priority="2" />
+      <Item value="select" priority="2" />
+      <Item value="RegexConverter`0" priority="0" />
+      <Item value="pattern" priority="0" />
+      <Item value="regex" priority="0" />
+      <Item value="foreach" priority="4" />
+      <Item value="match" priority="9" />
+      <Item value="SessionData" priority="2" />
+      <Item value="session" priority="5" />
+      <Item value="SecretKey" priority="0" />
+      <Item value="SessionExpires" priority="0" />
+      <Item value="UserId" priority="0" />
+      <Item value="SessionId" priority="0" />
+      <Item value="null" priority="5" />
+      <Item value="Users`0" priority="1" />
+      <Item value="users" priority="1" />
+      <Item value="IEnumerable" priority="2" />
+      <Item value="UserNameCase`0" priority="0" />
+      <Item value="ProfilesResult`0" priority="2" />
+      <Item value="Users" priority="0" />
+      <Item value="List&lt;User&gt;" priority="0" />
+      <Item value="User`0" priority="6" />
+      <Item value="BirthDate" priority="2" />
+      <Item value="ParseUser`0" priority="0" />
+      <Item value="FirstName" priority="0" />
+      <Item value="LastName" priority="0" />
+      <Item value="Nickname" priority="0" />
+      <Item value="Sex" priority="0" />
+      <Item value="NoSex" priority="0" />
+      <Item value="CityId" priority="0" />
+      <Item value="CountryId" priority="0" />
+      <Item value="Timezone" priority="0" />
+      <Item value="HomePhone" priority="0" />
+      <Item value="MobilePhone" priority="0" />
+      <Item value="UniversityId" priority="0" />
+      <Item value="UniversityName" priority="0" />
+      <Item value="FacultyId" priority="0" />
+      <Item value="FacultyName" priority="0" />
+      <Item value="Graduation" priority="0" />
+      <Item value="Uid" priority="0" />
+      <Item value="HasMobile" priority="0" />
+      <Item value="Rate" priority="0" />
+      <Item value="PhotoUrl" priority="1" />
+      <Item value="PhotoMediumUrl" priority="0" />
+      <Item value="PhotoBigUrl" priority="0" />
+      <Item value="user" priority="22" />
+      <Item value="static" priority="9" />
+      <Item value="elementName" priority="0" />
+      <Item value="NotImplementedException" priority="1" />
+      <Item value="res" priority="1" />
+      <Item value="FriendsResult`0" priority="3" />
+      <Item value="usersList" priority="0" />
+      <Item value="Dictionary" priority="0" />
+      <Item value="uids" priority="3" />
+      <Item value="current" priority="0" />
+      <Item value="ListBox`0" priority="0" />
+      <Item value="profiles" priority="0" />
+      <Item value="DependencyProperty`0" priority="0" />
+      <Item value="listView1" priority="0" />
+      <Item value="Exception`0" priority="1" />
+      <Item value="ErrorCode`0" priority="2" />
+      <Item value="RemoteMethodException" priority="0" />
+      <Item value="RemoteMethodException`0" priority="0" />
+      <Item value="MessageBox`0" priority="0" />
+      <Item value="ex" priority="1" />
+      <Item value="activity" priority="0" />
+      <Item value="friendsList" priority="0" />
+      <Item value="VkAdapter`0" priority="4" />
+      <Item value="instance" priority="0" />
+      <Item value="VkAdapter" priority="0" />
+      <Item value="Match`0" priority="1" />
+      <Item value="switch" priority="1" />
+      <Item value="case" priority="3" />
+      <Item value="break" priority="3" />
+      <Item value="DateTime" priority="0" />
+      <Item value="format" priority="0" />
+      <Item value="d" priority="1" />
+      <Item value="birthDate" priority="3" />
+      <Item value="Debug`0" priority="0" />
+      <Item value="date" priority="1" />
+      <Item value="CultureInfo`0" priority="0" />
+      <Item value="Date" priority="1" />
+      <Item value="BirthDate`0" priority="0" />
+      <Item value="ParseDateString`0" priority="0" />
+      <Item value="regExp" priority="0" />
+      <Item value="group" priority="5" />
+      <Item value="override" priority="2" />
+      <Item value="Day" priority="1" />
+      <Item value="Month" priority="1" />
+      <Item value="Year" priority="0" />
+      <Item value="sb" priority="3" />
+      <Item value="month" priority="2" />
+      <Item value="year" priority="1" />
+      <Item value="capture" priority="0" />
+      <Item value="Capture`0" priority="0" />
+      <Item value="Integer" priority="0" />
+      <Item value="out" priority="0" />
+      <Item value="day" priority="0" />
+      <Item value="city" priority="1" />
+      <Item value="country" priority="1" />
+      <Item value="hasMobile" priority="2" />
+      <Item value="Boolean`0" priority="1" />
+      <Item value="rate" priority="1" />
+      <Item value="el" priority="1" />
+      <Item value="universityId" priority="1" />
+      <Item value="graduation" priority="1" />
+      <Item value="GetProfiles`0" priority="0" />
+      <Item value="List&lt;string&gt;" priority="1" />
+      <Item value="fields" priority="3" />
+      <Item value="IGrouping" priority="0" />
+      <Item value="fieldsList" priority="0" />
+      <Item value="ProfileFields`0" priority="19" />
+      <Item value="MethodNames`0" priority="3" />
+      <Item value="GetUserSettings`0" priority="0" />
+      <Item value="IsAppUser`0" priority="0" />
+      <Item value="interface" priority="1" />
+      <Item value="AppDomainSetup`0" priority="1" />
+      <Item value="Group`0" priority="2" />
+      <Item value="Id" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="IsClosed" priority="0" />
+      <Item value="element" priority="3" />
+      <Item value="GroupFields`0" priority="3" />
+      <Item value="isClosed" priority="1" />
+      <Item value="char" priority="1" />
+      <Item value="GetGroups`0" priority="0" />
+      <Item value="GetGroupsFull`0" priority="0" />
+      <Item value="SessionExpiredException" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Format`0" priority="0" />
+      <Item value="Format`0" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int32">
-      <Item value="Parse`0" priority="1" />
+      <Item value="Parse`0" priority="16" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Vkontakte.MethodLibraryBase">
       <Item value="Adapter" priority="0" />
@@ -104,87 +234,281 @@
       <Item value="Settings" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
-      <Item value="ToString`0" priority="0" />
+      <Item value="ToString`0" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="First`1" priority="0" />
-      <Item value="Select`2" priority="2" />
+      <Item value="Select`2" priority="3" />
       <Item value="Cast`1" priority="0" />
-      <Item value="ToList`1" priority="0" />
+      <Item value="ToList`1" priority="2" />
+      <Item value="Aggregate`3" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int16">
       <Item value="Parse`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Xml.Linq.XElement">
-      <Item value="Value" priority="1" />
-      <Item value="Elements`0" priority="1" />
+      <Item value="Value" priority="7" />
+      <Item value="Elements`0" priority="5" />
+      <Item value="Element`0" priority="2" />
+      <Item value="TryGetElementValue`0" priority="17" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Vkontakte.Users.Users">
       <Item value="IsAppUser`0" priority="0" />
       <Item value="GetUserSettings`0" priority="0" />
-      <Item value="GetFriends`0" priority="1" />
+      <Item value="GetFriends`0" priority="2" />
+      <Item value="GetProfiles`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Vkontakte.IVkAdapter">
-      <Item value="UserId" priority="0" />
+      <Item value="UserId" priority="2" />
+      <Item value="Authenticated" priority="1" />
+      <Item value="Authenticate`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Vkontakte.Users.UserFriendsResult">
-      <Item value="FriendsList" priority="1" />
+      <Item value="FriendsList" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="3" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="Select`2" priority="1" />
+      <Item value="Count" priority="2" />
+      <Item value="ToConcatenetedString`0" priority="0" />
+      <Item value="ToConcatenetedString`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Regex">
+      <Item value="Match`0" priority="1" />
+      <Item value="Matches`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Match">
+      <Item value="Groups" priority="8" />
+      <Item value="Captures" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.GroupCollection">
+      <Item value="CopyTo`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Group">
+      <Item value="Value" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Replace`0" priority="1" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="TrimEnd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Parse`0" priority="2" />
+      <Item value="MinValue" priority="0" />
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Users.ProfilesResult">
+      <Item value="Users" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Users.User">
+      <Item value="Uid" priority="0" />
+      <Item value="FirstName" priority="0" />
+      <Item value="LastName" priority="0" />
+      <Item value="PhotoUrl" priority="0" />
+      <Item value="Nickname" priority="0" />
+      <Item value="Sex" priority="0" />
+      <Item value="BirthDate" priority="2" />
+      <Item value="CityId" priority="0" />
+      <Item value="CountryId" priority="0" />
+      <Item value="PhotoMediumUrl" priority="0" />
+      <Item value="PhotoBigUrl" priority="0" />
+      <Item value="Timezone" priority="0" />
+      <Item value="HasMobile" priority="0" />
+      <Item value="Rate" priority="0" />
+      <Item value="HomePhone" priority="0" />
+      <Item value="MobilePhone" priority="0" />
+      <Item value="UniversityId" priority="0" />
+      <Item value="UniversityName" priority="0" />
+      <Item value="FacultyName" priority="0" />
+      <Item value="Graduation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Users.FriendsResult">
+      <Item value="FriendsList" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Bumkler.MainWindow">
+      <Item value="Friends" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ListView">
+      <Item value="ItemsSource" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.MethodResults.ErrorResult">
+      <Item value="ErrorCode" priority="0" />
+      <Item value="ErrorMessage" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Exceptions.RemoteMethodException">
+      <Item value="ErrorCode" priority="1" />
+      <Item value="ErrorMessage" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Activity.Activity">
+      <Item value="Get`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Users.IsAppUserResult">
+      <Item value="AppInstalled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Activity.ActivityResult">
+      <Item value="Activity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.SessionData">
+      <Item value="SessionExpires" priority="2" />
+      <Item value="SessionId" priority="0" />
+      <Item value="SecretKey" priority="0" />
+      <Item value="UserId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Vkontakte.VkAdapter">
+      <Item value="GetInstance`0" priority="0" />
+      <Item value="Instance" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Vkontakte.Users.Users">
+      <Item value="GetUserSettings`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.MatchCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddSeconds`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="ToShortTimeString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Vkontakte.Users.UserSex">
+      <Item value="TryParse`1" priority="1" />
+      <Item value="NoSex" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="WriteLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="GetCultureInfo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="5" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Date.BirthDate">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Capture">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Boolean">
+      <Item value="Parse`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Byte">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Vkontakte.Constants.ProfileFields">
+      <Item value="Uid" priority="0" />
+      <Item value="FirstName" priority="0" />
+      <Item value="LastName" priority="0" />
+      <Item value="Nickname" priority="0" />
+      <Item value="Sex" priority="1" />
+      <Item value="BirdthDate" priority="0" />
+      <Item value="CityId" priority="0" />
+      <Item value="CountryId" priority="0" />
+      <Item value="PhotoUrl" priority="1" />
+      <Item value="PhotoMediumUrl" priority="0" />
+      <Item value="PhotoBigUrl" priority="0" />
+      <Item value="Timezone" priority="0" />
+      <Item value="HasMobile" priority="0" />
+      <Item value="Rate" priority="0" />
+      <Item value="HomePhone" priority="0" />
+      <Item value="MobilePhone" priority="0" />
+      <Item value="UniversityId" priority="0" />
+      <Item value="UniversityName" priority="0" />
+      <Item value="FacultyId" priority="0" />
+      <Item value="FacultyName" priority="0" />
+      <Item value="Graduation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Vkontakte.Constants.MethodNames">
+      <Item value="GetProfiles" priority="0" />
+      <Item value="GetFriends" priority="0" />
+      <Item value="IsAppUser" priority="0" />
+      <Item value="GetUserSettings" priority="0" />
+      <Item value="ActivityGet" priority="0" />
+      <Item value="GetUserBalance" priority="0" />
+      <Item value="GetGroups" priority="1" />
+      <Item value="GetGroupsFull" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vkontakte.Users.Group">
+      <Item value="Id" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="PhotoUrl" priority="0" />
+      <Item value="IsClosed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Vkontakte.Constants.GroupFields">
+      <Item value="Id" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Photo" priority="0" />
+      <Item value="IsClosed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
       <Item value="Add`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Enums.cs" caret="0" fromTop="0" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:MethodLibraryBase.cs" caret="211" fromTop="10" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:Activity.cs" caret="1188" fromTop="27" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Utils.cs" caret="2559" fromTop="59" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="941" fromTop="13" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSex.cs" caret="167" fromTop="6" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:MethodResults/f:IMethodResult.cs" caret="164" fromTop="6" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:ActivityResult.cs" caret="203" fromTop="7" />
       <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:MethodResults/f:ErrorResult.cs" caret="172" fromTop="6" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:IVkAdapter.cs" caret="217" fromTop="8" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="0" fromTop="0" />
-      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="1233" fromTop="5" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="334" fromTop="0" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserFriendsResult.cs" caret="492" fromTop="16" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="0" fromTop="0" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="2416" fromTop="23" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4188" fromTop="18" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="78" fromTop="3" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Exceptions/f:RemoteMethodException.cs" caret="495" fromTop="14" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml" caret="1783" fromTop="17" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:App.xaml.cs" caret="364" fromTop="14" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:SessionData.cs" caret="300" fromTop="14" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Utils.cs" caret="2763" fromTop="7" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:IVkAdapter.cs" caret="533" fromTop="13" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Constants/f:Messages.cs" caret="136" fromTop="3" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Constants/f:MethodNames.cs" caret="1110" fromTop="22" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Date/f:BirthDate.cs" caret="689" fromTop="7" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Activity/f:Activity.cs" caret="272" fromTop="11" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Enums.cs" caret="364" fromTop="2" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Group.cs" caret="689" fromTop="28" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="4283" fromTop="38" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Constants/f:GroupFields.cs" caret="229" fromTop="5" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Constants/f:ProfileFields.cs" caret="1447" fromTop="24" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Exceptions/f:SessionExpiredException.cs" caret="63" fromTop="3" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="2138" fromTop="16" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Extensions.cs" caret="721" fromTop="24" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="8847" fromTop="84" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="2747" fromTop="29" />
     </RecentFiles>
     <RecentEdits>
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1591" fromTop="18" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="1856" fromTop="24" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2128" fromTop="30" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2658" fromTop="27" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2813" fromTop="24" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="2956" fromTop="11" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3079" fromTop="17" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3229" fromTop="16" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3373" fromTop="21" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3535" fromTop="26" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="3656" fromTop="31" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:User.cs" caret="158" fromTop="7" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="868" fromTop="12" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="857" fromTop="12" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserNameCase.cs" caret="864" fromTop="12" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="3151" fromTop="18" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="420" fromTop="10" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:IsAppUserResult.cs" caret="223" fromTop="8" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="448" fromTop="14" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserSettingsResult.cs" caret="290" fromTop="9" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="292" fromTop="12" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="2506" fromTop="18" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4720" fromTop="28" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4693" fromTop="32" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4587" fromTop="27" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserFriendsResult.cs" caret="274" fromTop="8" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4358" fromTop="31" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:UserFriendsResult.cs" caret="490" fromTop="16" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="3337" fromTop="27" />
-      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="4188" fromTop="18" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Group.cs" caret="546" fromTop="18" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Group.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Group.cs" caret="267" fromTop="11" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Group.cs" caret="689" fromTop="28" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Constants/f:GroupFields.cs" caret="0" fromTop="0" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Constants/f:GroupFields.cs" caret="229" fromTop="5" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="11827" fromTop="30" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="10504" fromTop="22" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="11295" fromTop="32" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Extensions.cs" caret="809" fromTop="20" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="5347" fromTop="17" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="5541" fromTop="20" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="11016" fromTop="13" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="11246" fromTop="17" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="9700" fromTop="5" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="10032" fromTop="23" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="10792" fromTop="32" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="10316" fromTop="9" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="3219" fromTop="13" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="3351" fromTop="20" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="3816" fromTop="21" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="4089" fromTop="27" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="2883" fromTop="38" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Exceptions/f:SessionExpiredException.cs" caret="279" fromTop="9" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Exceptions/f:SessionExpiredException.cs" caret="63" fromTop="3" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="1740" fromTop="8" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:VkAdapter.cs" caret="2138" fromTop="16" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/f:Extensions.cs" caret="721" fromTop="24" />
+      <File id="FEB0F3F5-2AF4-45C2-9836-660D9D1E7837/d:Users/f:Users.cs" caret="8984" fromTop="14" />
+      <File id="FA4904BC-58F1-48C0-8540-A176FC9BBF06/f:MainWindow.xaml.cs" caret="2848" fromTop="30" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
