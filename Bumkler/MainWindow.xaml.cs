@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using mshtml;
 using Vkontakte;
 using Vkontakte.Activity;
+using Vkontakte.Constants;
 using Vkontakte.Exceptions;
 using Vkontakte.MethodResults;
 using Vkontakte.Users;
@@ -21,11 +22,10 @@ namespace Bumkler
     {
         private int userId = 59156; // Replace with your ID
         private int appId = 1892435; // Replace with your app id
-        private int settingsMask = 2047;
+        private int settingsMask = 255;
 
         private Uri url;
         private SessionData sessionData;
-        private bool authenticated = false;
         private IVkAdapter adapter;
 
         public List<User> Friends;
@@ -46,17 +46,16 @@ namespace Bumkler
 
         private void GetSettings()
         {
-            if (!authenticated || adapter == null)
+            if (adapter == null || !adapter.Authenticated)
             {
                 MessageBox.Show("Not authenticated!");
                 return;
             }
 
-            var misc = new Users(adapter);
-
+           
             try
             {
-                var res = misc.GetUserSettings();
+                var res = Users.GetUserSettings();
                 MessageBox.Show(res.ToString());
             }
             catch (RemoteMethodException ex)
@@ -71,17 +70,16 @@ namespace Bumkler
 
         private void GetActivity()
         {
-            if(!authenticated || adapter == null)
+            if (adapter == null || !adapter.Authenticated)
             {
                 MessageBox.Show("Not authenticated!");
                 return;
             }
             
-            var activity = new Activity(adapter);
-
+           
             try
             {
-                var res = activity.Get();
+                var res = Activity.Get();
                 MessageBox.Show(res.Activity);
             }
             catch (RemoteMethodException ex)
@@ -93,16 +91,15 @@ namespace Bumkler
 
         private void GetFriends()
         {
-            if (!authenticated || adapter == null)
+            if (adapter == null || !adapter.Authenticated)
             {
                 MessageBox.Show("Not authenticated!");
                 return;
             }
 
-            var users = new Users(adapter);
-
-            var friendsList = users.GetFriends();
-            var profiles = users.GetProfiles(friendsList);
+            
+            var friendsList = Users.GetFriends();
+            var profiles = Users.GetProfiles(friendsList, new List<string>(){ProfileFields.PhotoUrl});
             listView1.ItemsSource = profiles;
             
         }
@@ -140,16 +137,13 @@ namespace Bumkler
                 
                 sessionData = Utils.ParseLogin(e.Uri) ?? ReRequestSessionData(((sender as WebBrowser).Document as IHTMLDocument2).cookie);
 
-                adapter = new VkAdapter(sessionData, userId, appId);
-                authenticated = true;
-               
+                adapter = VkAdapter.Instance;
+                adapter.Authenticate(sessionData, userId, appId);
             }
 
             else if (e.Uri.ToString().Contains("http://vkontakte.ru/api/login_failure.html"))
             {
                 MessageBox.Show("Authenticatin failed!");
-                authenticated = false;
-               
             }
             //webBrowser.Visibility = System.Windows.Visibility.Hidden;
         }
